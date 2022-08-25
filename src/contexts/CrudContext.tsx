@@ -1,13 +1,7 @@
+import { createContext, ReactNode, useContext, useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
-import produce from "immer";
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
 import toast from "react-hot-toast";
+import produce from "immer";
 
 export interface DadoProps {
   name: string;
@@ -51,11 +45,6 @@ export function CrudContextProvider({ children }: CrudContextProviderProps) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
-  useEffect(() => {
-    console.log(editDados.index);
-    console.log(dados);
-  }, [email]);
-
   function handleSave(novoDado: DadoProps) {
     const dadoAlreadyExists = dados.findIndex(
       (dado) => dado.email === novoDado.email
@@ -74,9 +63,8 @@ export function CrudContextProvider({ children }: CrudContextProviderProps) {
       });
 
       toast.success("Dados do usuário alterados!");
-
       localStorage.setItem("cad_cliente", JSON.stringify(dadosNovos));
-
+      setDados(dadosNovos);
       setEmail("");
       setName("");
       onClose();

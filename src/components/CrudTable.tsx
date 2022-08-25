@@ -43,10 +43,10 @@ export function CrudTable() {
       <Table mt="6">
         <Thead>
           <Tr>
-            <Th maxW={isMobile ? 5 : 100} fontSize="1.25rem">
+            <Th w="200px" fontSize="1.25rem">
               Nome
             </Th>
-            <Th maxW={isMobile ? 5 : 100} fontSize="1.25rem">
+            <Th maxW="500px" fontSize="1.25rem">
               Email
             </Th>
             <Th p={0}></Th>
