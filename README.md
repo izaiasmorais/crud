@@ -8,6 +8,8 @@
 
 CRUD, um acrônimo para as quatro funções principais para uma aplicação que envolve armazanamento de dados. Em ordem, as funções são create, read, update e delete.
 
+https://user-images.githubusercontent.com/53953937/186559038-ff4bde8b-1246-4554-8ebe-adbe7de05418.mp4
+
 ### Funcionalidades
 
 - Criação de dados
