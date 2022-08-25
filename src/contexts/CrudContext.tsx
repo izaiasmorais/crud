@@ -44,15 +44,16 @@ interface CrudContextProviderProps {
 export const CrudContext = createContext({} as CrudContextType);
 
 export function CrudContextProvider({ children }: CrudContextProviderProps) {
-  const [novoDado, setNovoDado] = useState<DadoProps>({ name: "", email: "" });
   const { onOpen, onClose, isOpen } = useDisclosure();
-  const [dados, setDados] = useState<DadoProps[]>([]);
+  const [novoDado, setNovoDado] = useState<DadoProps>({ name: "", email: "" });
   const [editDados, setEditDados] = useState<EditDados>({} as EditDados);
+  const [dados, setDados] = useState<DadoProps[]>([]);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
   useEffect(() => {
-    console.log(Object.keys(editDados).length);
+    console.log(editDados.index);
+    console.log(dados);
   }, [email]);
 
   function handleSave(novoDado: DadoProps) {
@@ -68,11 +69,13 @@ export function CrudContextProvider({ children }: CrudContextProviderProps) {
     }
 
     if (Object.keys(editDados).length) {
-      dados[editDados.index] = { name, email };
+      const dadosNovos = produce(dados, (draft) => {
+        draft[editDados.index] = { name, email };
+      });
 
       toast.success("Dados do usuário alterados!");
 
-      localStorage.setItem("cad_cliente", JSON.stringify(dados));
+      localStorage.setItem("cad_cliente", JSON.stringify(dadosNovos));
 
       setEmail("");
       setName("");

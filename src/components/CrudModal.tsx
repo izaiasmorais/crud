@@ -66,7 +66,7 @@ export function CrudModal() {
 
           <ModalFooter>
             <Button
-              colorScheme="green"
+              colorScheme="purple"
               mr={3}
               onClick={() => [handleSave(novoDado!)]}
             >

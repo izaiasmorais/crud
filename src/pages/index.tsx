@@ -29,7 +29,6 @@ const Home: NextPage = () => {
   return (
     <Flex h="100vh" align="center" justify="center" fontSize="1.25rem">
       <Box
-        // bg="#e5e5e5"
         maxW={800}
         w="100%"
         h="500px"
@@ -38,7 +37,7 @@ const Home: NextPage = () => {
         overflowX="auto"
       >
         <Flex justify="space-between">
-          <Button colorScheme="blue" onClick={handleOpen}>
+          <Button colorScheme="purple" onClick={handleOpen}>
             CADASTRAR USUÁRIO
           </Button>
           {colorMode === "light" ? (
