@@ -1,30 +1,30 @@
 <h1 align='center'>
-   EZBlog
+   Crud Application
 </h1>
 
-<p align="center">Blog moderno sobre programação no geral</p>
+<p align="center">Um crud básico feito em React.</p>
 
 ## 📃 Sobre o projeto
 
-Feito em Next.js e CharkaUI, o blog é totalmente responsivo e altamente performático. Criei o blog inicialmente para treinar um pouco construir interfaces com ChakaUI, e logo decidi mantê-lo documentando meus aprendizados na programação, como uso de bibliotecas e resolução de problemas que vou encontrado ao longo dos tempos. Hoje o maior foco é documentar essas soluções e compartilhar com a comunidade.
+CRUD, um acrônimo para as quatro funções principais para uma aplicação que envolve armazanamento de dados. Em ordem, as funções são create, read, update e delete.
 
 ### Funcionalidades
 
-- Listagem de posts com GraphCMS.
-- Resposividade completa.
-- Dark mode.
+- Criação de dados
+- Leitura de dados.
+- Atualização de dados.
+- Deletar dados.
 
 ## 🚀 Tecnologias
 
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [GraphCMS](https://hygraph.com/)
 - [ChakraUI](https://chakra-ui.com/)
 
 ## 💻 Cloning project
 
 ```bash
-$ git clone https://github.com/IzaiasMorais/phanox.git && cd phanox
+$ git clone https://github.com/IzaiasMorais/crud.git && cd crud
 ```
 
 ```bash
