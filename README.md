@@ -6,7 +6,7 @@
 
 ## 📃 Sobre o projeto
 
-CRUD, um acrônimo para as quatro funções principais para uma aplicação que envolve armazanamento de dados. Em ordem, as funções são **create**, **read**, **update** e **delete**.
+CRUD, um acrônimo para as quatro funções que são essenciais em uma aplicação que envolve armazanamento de dados. Em ordem, as funções são **create**, **read**, **update** e **delete**.
 
 
 https://user-images.githubusercontent.com/53953937/186931112-5c7f0863-c314-49e0-9ee1-096fa38ac03f.mp4
