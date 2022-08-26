@@ -12,9 +12,9 @@ CRUD, um acrônimo para as quatro funções principais para uma aplicação que 
 
 ### Funcionalidades
 
-- Criação de dados
-- Leitura de dados.
-- Atualização de dados.
+- Adicionar dados.
+- Ler dados existentes.
+- Atualizar dados.
 - Deletar dados.
 
 ## 🚀 Tecnologias
@@ -23,17 +23,17 @@ CRUD, um acrônimo para as quatro funções principais para uma aplicação que 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ChakraUI](https://chakra-ui.com/)
 
-## 💻 Cloning project
+## 💻 Clonando projeto
 
 ```bash
 $ git clone https://github.com/IzaiasMorais/crud.git && cd crud
 ```
 
 ```bash
-# Install the dependecies
+# Instalando dependências
 $ npm i
 
-# Run the project
+# Rodando o projeto
 $ npm run dev
 
 ```
